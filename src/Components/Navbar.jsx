@@ -12,7 +12,7 @@ export default function Navbar() {
   <nav className='shadow h-14 flex justify-center'>
     <div  className='flex justify-between items-center font-semibold
     w-full md:w-[768px] lg:w-[1024px]
-    mx-5
+    mx-5 font-inter
     '>
       
       {/* Nav izquierda */}
