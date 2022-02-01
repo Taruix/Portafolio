@@ -22,21 +22,13 @@ export default function Navbar() {
         <ul className='flex'>
           <li className='flex space-x-5'>
             <NavLink to="/" className="text-blue-600 font-bold">
-              Logo 
-            </NavLink>
-            <NavLink to="/" className="text-blue-600 font-bold flex sm:hidden">
-              Roberto
+              Inicio 
             </NavLink>
           </li>
         </ul>
 
         {/* Nav Links */}
         <ul className='hidden sm:flex space-x-5'>
-          <li>
-            <NavLink to="/">
-              Inicio
-            </NavLink>
-          </li>
           <li>
             <NavLink to="/sobremi">
               Sobre Mi

@@ -7,28 +7,34 @@ export default function Proyecto(props) {
     <>
     <div>
       {/* Contenedor del Proyecto */}
-      <div className='bg-white rounded-lg text-black h-full'>
+      <div className='bg-white rounded-lg text-black h-full overflow-hidden flex flex-col'>
         
         {/* Imagen del proyecto */}
-        <div>
-          <img src={props.foto} alt="" />
+        <div className='shadow'>
+          <img src={props.foto} alt="" className='lg:max-h-[173px] max-h-[1000px] w-full object-cover' />
         </div>
 
         {/* Contenido del proyecto */}
-        <div className='px-8 pb-8 pt-2'>
-
+        <div className='px-8 pt-4 flex flex-col h-full'>
 
           {/* Titulo y descripcion del proyecto */}
-          <div className='pb-4'>
+          <div className='pb-2'>
             <h4 className='text-2xl font-semibold'>{props.titulo}</h4>
             <p className='pt-2'>{props.descripcion}</p>
           </div>
 
-          <div className='content-flex self-end'>
+        </div>
+
+          {/* Parte baja del la card */}
+          <div className='pb-8 px-8'>
             {/* Tecnologias, herramientas, git y link */}
             <div className='flex justify-between'>
+
               {/* Iconos de las herramientas */}
-              <div>tools</div>
+              <div className='flex gap-x-1'>{props.tecnologias.map(tec => {
+                return <img src={tec} alt="" />
+              })}</div>
+
               {/* Link a repositorio y pagina */}
               <div className='flex gap-x-1'>
 
@@ -49,14 +55,13 @@ export default function Proyecto(props) {
             </div>
 
             {/* Boton que muestra toda la focumentacion */}
-            <div className='relative'>
+            <div className='pt-3'>
               <button className='text-[#22D1EE] bottom-0'>
                 Documentacion {"->"}
               </button>
             </div>
           </div>
-          </div>
-
+        
 
       </div>
     </div>

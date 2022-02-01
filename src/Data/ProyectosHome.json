@@ -5,20 +5,23 @@
         "descripcion": "Proyecto de desarrollo de exoesqueletos para personas con paraplegia.",
         "repositorio": "",
         "url": "",
-        "foto": ""
+        "foto": "Images/R2_TALOS.JPG",
+        "tecnologias": ["Images/solidworks.svg"]
     },{
         "id": 2,
         "titulo": "Domotronics",
         "descripcion": "Creacion de dispositivos inteligentes de domotica.",
         "repositorio": "https://github.com/Taruix/ProyectoIMTC-Domotica",
         "url": "https://domotronics.netlify.app/",
-        "foto": "../Images/domotronics.png"
+        "foto": "Images/domotronics.png",
+        "tecnologias": ["Images/javascript.svg","Images/bootstrap.svg","Images/firebase.svg","Images/arduino.svg"]
     },{
         "id": 3,
         "titulo": "Portafolio",
         "descripcion": "Portafolio personal para mostrar los proyectos en los que he trabajado, conocimientos y habilidades.",
-        "repositorio": "",
+        "repositorio": "https://github.com/Taruix/Portafolio",
         "url": "",
-        "foto": ""
+        "foto": "Images/PortafolioProyecto.png",
+        "tecnologias": ["Images/react.svg","Images/tailwind.svg"]
     }
 ]

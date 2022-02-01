@@ -33,7 +33,7 @@ export default function HomaPage() {
 
                 {/* Lo que soy */}
                 <h3 className='font-inter font-extrabold text-base sm:text-4xl'>
-                  Soy <b className='text-blue-600'>Ingeniero en Mecatronica</b>
+                  Soy <b className='text-blue-600'>Ingeniero en Mecatrónica</b>
                 </h3>
 
                 {/* Botones de contacto */}

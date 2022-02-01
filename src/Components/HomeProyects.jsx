@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Proyecto from './Proyecto';
 import ProyectosHome from "../Data/ProyectosHome.json"
 
 export default function HomeProyects() {
 
-  const [proyectos, setProyectos] = useState(ProyectosHome);
-
-  console.log(proyectos)
+  const [proyectos, _ ] = useState(ProyectosHome);
 
   return (
       <>
       {/* Configuraciones del contenedor principal */}
       <div className='flex justify-center bg-[#0E153A] text-white font-inter'>
-          <div className='flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 md:h-screen lg:my-0 justify-center items-center'>
+          <div className='flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 lg:h-screen lg:my-0 justify-center items-center'>
 
             {/* Contenido de la seccion Proyectos */}
             <div className='space-y-10 w-full'>
@@ -23,7 +21,7 @@ export default function HomeProyects() {
               </div>
 
               {/* Seccion de las Cards */}
-              <div className='w-full gap-x-7 grid grid-cols-1 lg:grid-cols-3'>
+              <div className='w-full gap-x-7 grid grid-cols-1 lg:grid-cols-3 gap-y-7'>
                 {proyectos.map(data =>{
                   return(
                     <Proyecto 
@@ -33,6 +31,7 @@ export default function HomeProyects() {
                       url={data.url}
                       repositorio={data.repositorio}
                       foto={data.foto}
+                      tecnologias={data.tecnologias}
                     />
                   )
                 })}
