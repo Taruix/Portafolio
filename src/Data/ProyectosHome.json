@@ -1,27 +1,41 @@
 [
-    {
-        "id": 1,
-        "titulo": "ExoEngine",
-        "descripcion": "Proyecto de desarrollo de exoesqueletos para personas con paraplegia.",
-        "repositorio": "",
-        "url": "",
-        "foto": "Images/R2_TALOS.JPG",
-        "tecnologias": ["Images/solidworks.svg"]
-    },{
-        "id": 2,
-        "titulo": "Domotronics",
-        "descripcion": "Creacion de dispositivos inteligentes de domotica.",
-        "repositorio": "https://github.com/Taruix/ProyectoIMTC-Domotica",
-        "url": "https://domotronics.netlify.app/",
-        "foto": "Images/domotronics.png",
-        "tecnologias": ["Images/javascript.svg","Images/bootstrap.svg","Images/firebase.svg","Images/arduino.svg"]
-    },{
-        "id": 3,
-        "titulo": "Portafolio",
-        "descripcion": "Portafolio personal para mostrar los proyectos en los que he trabajado, conocimientos y habilidades.",
-        "repositorio": "https://github.com/Taruix/Portafolio",
-        "url": "",
-        "foto": "Images/PortafolioProyecto.png",
-        "tecnologias": ["Images/react.svg","Images/tailwind.svg"]
-    }
+  {
+    "id": 1,
+    "titulo": "ExoEngine",
+    "descripcion": "Proyecto de desarrollo de exoesqueletos para personas con paraplegia.",
+    "repositorio": "",
+    "url": "",
+    "foto": "Images/R2_TALOS.JPG",
+    "tecnologias": ["Images/solidworks.svg"],
+    "programacion": false
+  },
+  {
+    "id": 2,
+    "titulo": "Domotronics",
+    "descripcion": "Creacion de dispositivos inteligentes de domotica.",
+    "repositorio": "https://github.com/Taruix/ProyectoIMTC-Domotica",
+    "url": "https://domotronics.netlify.app/",
+    "foto": "Images/domotronics.png",
+    "tecnologias": [
+      "Images/bootstrap.svg",
+      "Images/javascript.svg",
+      "Images/firebase.svg",
+      "Images/arduino.svg"
+    ],
+    "programacion": true
+  },
+  {
+    "id": 3,
+    "titulo": "Portafolio",
+    "descripcion": "Portafolio personal para mostrar los proyectos en los que he trabajado, conocimientos y habilidades.",
+    "repositorio": "https://github.com/Taruix/Portafolio",
+    "url": "",
+    "foto": "Images/PortafolioProyecto.png",
+    "tecnologias": [
+      "Images/figma.svg",
+      "Images/react.svg",
+      "Images/tailwind.svg"
+    ],
+    "programacion": true
+  }
 ]
