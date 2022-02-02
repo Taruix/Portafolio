@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "grupo": "Carrera",
+    "habilidades": []
+  },
+  {
+    "id": 2,
+    "grupo": "Programacion",
+    "habilidades": [
+      "Images/bootstrap.svg",
+      "Images/javascript.svg",
+      "Images/firebase.svg",
+      "Images/arduino.svg"
+    ]
+  },
+  {
+    "id": 3,
+    "grupo": "Sistemas Embebidos",
+    "habilidades": []
+  },
+  {
+    "id": 4,
+    "grupo": "Diseño",
+    "habilidades": []
+  },
+  {
+    "id": 5,
+    "grupo": "Emprendedurismo",
+    "habilidades": []
+  },
+  {
+    "id": 6,
+    "grupo": "Finanzas",
+    "habilidades": []
+  },
+  {
+    "id": 7,
+    "grupo": "Programacion",
+    "habilidades": []
+  },
+  {
+    "id": 2,
+    "grupo": "Programacion",
+    "habilidades": []
+  }
+]

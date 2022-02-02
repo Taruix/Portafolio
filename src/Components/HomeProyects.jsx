@@ -8,7 +8,7 @@ export default function HomeProyects() {
   return (
     <>
       {/* Configuraciones del contenedor principal */}
-      <div className="flex justify-center bg-[#0E153A] text-white font-inter">
+      <div className="flex justify-center bg-[#0E153A] text-white font-inter py-14">
         <div className="flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 lg:h-screen lg:my-0 justify-center items-center">
           {/* Contenido de la seccion Proyectos */}
           <div className="space-y-10 w-full">
