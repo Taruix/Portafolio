@@ -43,10 +43,10 @@ export default function Navbar() {
 
             {/* Botones */}
             <div className="hidden sm:flex space-x-5">
-              <button className="h-10 w-28 rounded-md text-white bg-blue-600 hover:bg-blue-500">
+              <button className="h-10 w-28 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
                 Contacto
               </button>
-              <button className="h-10 w-28 rounded-md text-black bg-blue-50 hover:bg-blue-100">
+              <button className="h-10 w-28 rounded-md text-black bg-blue-50 hover:bg-blue-100 cursor-pointer active:bg-blue-300">
                 Idioma
               </button>
             </div>

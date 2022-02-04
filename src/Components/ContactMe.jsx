@@ -2,6 +2,22 @@ import React from "react";
 import github from "../Images/github.svg";
 import emailjs from "emailjs-com";
 
+const salirExito = () => {
+  document.querySelector(".AlertaExito").classList.add("hidden");
+};
+
+const salirError = () => {
+  document.querySelector(".AlertaError").classList.add("hidden");
+};
+
+const mostrarExito = () => {
+  document.querySelector(".AlertaExito").classList.remove("hidden");
+};
+
+const mostrarError = () => {
+  document.querySelector(".AlertaError").classList.remove("hidden");
+};
+
 export default function ContactMe() {
   function enviarCorreo(e) {
     e.preventDefault();
@@ -14,10 +30,10 @@ export default function ContactMe() {
         "user_kVwHdjUgLwNGeA44G0K6E"
       )
       .then((res) => {
-        console.log(res);
+        mostrarExito();
       })
       .catch((err) => {
-        console.log(err);
+        mostrarError();
       });
 
     e.target.reset();
@@ -135,6 +151,121 @@ export default function ContactMe() {
                 />
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Alerta de mensaje enviado con exito */}
+      <div className="AlertaExito fixed top-0 left-0 hidden">
+        <div className="h-screen w-screen bg-black z-10 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white w-10/12 sm:w-9/12 md:w-7/12 lg:w-5/12 xl:w-4/12 p-5 rounded-md flex flex-col justify-center items-center gap-y-5 relative">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-[100px]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#0f0"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div className="flex flex-col items-center">
+              <h5 className="font-semibold text-lg text-center">
+                El mensaje se envió de manera exitosa
+              </h5>
+              <p className="text-center">
+                Pronto me estaré poniendo en contacto
+              </p>
+            </div>
+            <button
+              className="px-10 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 mt-2 cursor-pointer active:bg-blue-200"
+              onClick={salirExito}
+            >
+              Aceptar
+            </button>
+            <button className="absolute top-3 right-3" onClick={salirExito}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Alerta no se pudo mandar el mensaje */}
+      <div className="AlertaError fixed top-0 left-0 hidden">
+        <div className="h-screen w-screen bg-black z-10 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white w-10/12 sm:w-9/12 md:w-7/12 lg:w-5/12 xl:w-4/12 p-5 rounded-md flex flex-col justify-center items-center gap-y-5 relative">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-[100px]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#f00"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <div className="flex flex-col items-center">
+              <h5 className="font-semibold text-lg text-center">
+                Hubo un error al mandar el mensaje
+              </h5>
+              <p className="text-center">
+                Puede intentar nuevamente o mandarme un mensaje directo a mi
+                correo electrónico.
+                <br />
+                <b className="font-semibold text-blue-500">
+                  Roberto.Montalvo.Rocha@gmail.com
+                </b>
+                <br />
+                Gracias por su compresión
+              </p>
+            </div>
+            <button
+              className="px-10 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 mt-2 cursor-pointer active:bg-blue-200"
+              onClick={salirError}
+            >
+              Aceptar
+            </button>
+            <button className="absolute top-3 right-3" onClick={salirError}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
