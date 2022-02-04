@@ -37,7 +37,7 @@ export default function HomeProyects() {
 
             {/* Boton que redirecciona a ver todos los proyectos */}
             <div className="text-center">
-              <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500">
+              <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
                 Explorar todos los proyectos {"->"}
               </button>
             </div>

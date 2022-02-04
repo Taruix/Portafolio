@@ -10,7 +10,7 @@ export default function Skills() {
       {/* Contenedor de las habilidades y conocimientos */}
       <div>
         {/* Contenido de las habilidades */}
-        <div className="flex overflow-x-auto  justify-center gap-x-7 scrollbar-hide snap-mandatory before:shrink-0s after:shrink-0">
+        <div className="flex overflow-x-auto gap-x-7 scrollbar-hide snap-mandatory snap-x">
           {skills.map((info) => {
             return (
               <>
@@ -19,7 +19,7 @@ export default function Skills() {
                   <hr />
                   <div className="flex p-2">
                     {info.habilidades.map((hab) => {
-                      return <img src={hab} alt="" />;
+                      return <img src={hab} alt="" className="h-20" />;
                     })}
                   </div>
                 </div>

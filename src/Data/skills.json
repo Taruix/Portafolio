@@ -10,14 +10,13 @@
     "habilidades": [
       "Images/bootstrap.svg",
       "Images/javascript.svg",
-      "Images/firebase.svg",
-      "Images/arduino.svg"
+      "Images/firebase.svg"
     ]
   },
   {
     "id": 3,
     "grupo": "Sistemas Embebidos",
-    "habilidades": []
+    "habilidades": ["Images/arduino.svg"]
   },
   {
     "id": 4,

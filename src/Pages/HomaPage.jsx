@@ -1,4 +1,5 @@
 import React from "react";
+import ContactMe from "../Components/ContactMe";
 import Footer from "../Components/Footer";
 import HeroImage from "../Components/HeroImage";
 import HomeProyects from "../Components/HomeProyects";
@@ -11,6 +12,7 @@ export default function HomaPage() {
       <HomeProyects />
       <HomeSkills />
 
+      <ContactMe />
       <Footer />
     </>
   );
