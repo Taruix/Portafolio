@@ -36,6 +36,9 @@ export default function Navbar() {
                   <NavLink to="/proyectos">Proyectos</NavLink>
                 </li>
                 <li>
+                  <NavLink to="/contacto">Contacto</NavLink>
+                </li>
+                <li>
                   <NavLink to="/cv">CV</NavLink>
                 </li>
               </ul>
