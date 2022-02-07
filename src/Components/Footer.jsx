@@ -49,6 +49,7 @@ export default function Footer() {
 
               {/* Herramientas usadas para el diseño de esta pagina */}
               <div className="flex gap-x-2 w-6/12 sm:w-2/12 justify-start sm:justify-center">
+                <img src="Images/firebase.svg" alt="" />
                 <img src="Images/react.svg" alt="" />
                 <img src="Images/tailwind.svg" alt="" />
               </div>

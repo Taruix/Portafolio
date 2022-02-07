@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Proyecto from "./Proyecto";
-import ProyectosHome from "../Data/ProyectosHome.json";
+import db from "../Data/firebaseConfig";
+import { collection, onSnapshot } from "firebase/firestore";
 
 export default function HomeProyects() {
-  const [proyectos, _] = useState(ProyectosHome);
+  const [proyectos, setProyectos] = useState([]);
+
+  useEffect(() => {
+    const ObtenerProyectos = async () => {
+      onSnapshot(collection(db, "ProyectosHome"), (querySnapshot) => {
+        const grupoProyectos = [];
+        querySnapshot.forEach((proy) => {
+          grupoProyectos.push({ ...proy.data(), id: proy.id });
+        });
+        setProyectos(grupoProyectos);
+      });
+    };
+    ObtenerProyectos();
+  }, []);
 
   return (
     <>
