@@ -5,14 +5,14 @@ import linkProyecto from "../Images/linkProyecto.svg";
 export default function Proyecto(props) {
   return (
     <>
-      <div>
+      <div key={props.titulo}>
         {/* Contenedor del Proyecto */}
         <div className="bg-white rounded-lg text-black h-full overflow-hidden flex flex-col">
           {/* Imagen del proyecto */}
           <div className="shadow">
             <img
               src={props.foto}
-              alt=""
+              alt="Imagen del proyecto"
               className="lg:max-h-[173px] max-h-[1000px] w-full object-cover"
             />
           </div>
@@ -32,8 +32,14 @@ export default function Proyecto(props) {
             <div className="flex justify-between">
               {/* Iconos de las herramientas */}
               <div className="flex gap-x-1">
-                {props.tecnologias.map((tec) => {
-                  return <img src={tec} alt="" />;
+                {props.tecnologias.map((tec, i) => {
+                  return (
+                    <img
+                      key={i + props.titulo}
+                      src={tec}
+                      alt="Iconos de tecnologias utilizadas"
+                    />
+                  );
                 })}
               </div>
 
@@ -44,13 +50,16 @@ export default function Proyecto(props) {
                     <div>
                       {/* Link de la pagina o proyecto */}
                       <a href={props.url} target="_blank">
-                        <img src={linkProyecto} alt="" />
+                        <img
+                          src={linkProyecto}
+                          alt="Link que manda a la pagina del proyecto"
+                        />
                       </a>
                     </div>
                     {/* Link del repositorio de github */}
                     <div>
                       <a href={props.repositorio} target="_blank">
-                        <img src={github} alt="" />
+                        <img src={github} alt="Repositorio de Github" />
                       </a>
                     </div>
                   </>
