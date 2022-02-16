@@ -44,6 +44,7 @@ export default function HomeProyects() {
                     foto={data.foto}
                     tecnologias={data.tecnologias}
                     programacion={data.programacion}
+                    rol={data.rol}
                   />
                 );
               })}

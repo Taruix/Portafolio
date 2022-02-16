@@ -11,7 +11,11 @@ export default function HomaPage() {
           {/* Mobil!!!!!! Contenedor Imagen de la Hero Image, Derecha y Arriba */}
           <div className=" lg:hidden flex h-1/2 lg:h-full lg:w-1/2 items-center justify-center w-full lg:justify-end">
             {/* Imagen de la Hero */}
-            <img src={heroImg} alt="" className="py-4 lg:py-0 h-full" />
+            <img
+              src={heroImg}
+              alt="imagen de mi representacion"
+              className="py-4 lg:py-0 h-full"
+            />
           </div>
 
           {/* Contenedor texto de la Hero Image, Izquierda y Debajo */}

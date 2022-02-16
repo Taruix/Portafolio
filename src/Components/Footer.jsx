@@ -57,14 +57,19 @@ export default function Footer() {
               {/* Redes y contacto */}
               <div className="flex w-6/12 sm:w-5/12 justify-end items-center">
                 <div className="flex gap-x-2">
-                  <a href="https://github.com/Taruix" target="_blank">
-                    <img src="Images/githubw.svg" />
+                  <a
+                    href="https://github.com/Taruix"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src="Images/githubw.svg" alt="logo de github" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/robertomontalvorocha/"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <img src="Images/linkedin.svg" />
+                    <img src="Images/linkedin.svg" alt="logo de linkedin" />
                   </a>
                 </div>
               </div>

@@ -87,8 +87,13 @@ export default function ContactMe() {
                   href="https://www.linkedin.com/in/robertomontalvorocha/"
                   className="flex items-center gap-x-3"
                   target="_blank"
+                  rel="noreferrer"
                 >
-                  <img src="Images/githubb.svg" alt="" className="w-7 h-7" />
+                  <img
+                    src="Images/githubb.svg"
+                    alt="imagen linkedin"
+                    className="w-7 h-7"
+                  />
                   <p>/robertomontalvorocha/</p>
                 </a>
               </div>
@@ -99,8 +104,9 @@ export default function ContactMe() {
                   href="https://github.com/Taruix"
                   className="flex items-center gap-x-3"
                   target="_blank"
+                  rel="noreferrer"
                 >
-                  <img src={github} alt="" className="w-7 h-7" />
+                  <img src={github} alt="logo Github" className="w-7 h-7" />
                   <p>https://github.com/Taruix</p>
                 </a>
               </div>

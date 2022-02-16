@@ -10,7 +10,11 @@ export default function AboutMe() {
         <div className="flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 lg:h-screen lg:my-0 justify-center items-center">
           {/* Imagen de la seccion */}
           <div className="w-full lg:w-6/12 flex justify-center items-center h-2/4 lg:h-full">
-            <img src={MeSVG} alt="" className="h-full lg:h-fit" />
+            <img
+              src={MeSVG}
+              alt="Imagen de mi representacion"
+              className="h-full lg:h-fit"
+            />
           </div>
 
           {/* Informacion de la seccion */}
