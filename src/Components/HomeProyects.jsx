@@ -45,6 +45,7 @@ export default function HomeProyects() {
                     tecnologias={data.tecnologias}
                     programacion={data.programacion}
                     rol={data.rol}
+                    metodologia={data.metodologia}
                   />
                 );
               })}

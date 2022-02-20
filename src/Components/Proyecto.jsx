@@ -104,14 +104,14 @@ export default function Proyecto(props) {
         {/* Contenedor del contenedor del contenido */}
         <div className="h-screen w-screen bg-black z-10 bg-opacity-50 flex justify-center items-center">
           {/* Contenedor del contenido del proyecto */}
-          <div className="bg-white text-black w-11/12 h-[91%] py-6 px-12 rounded-md flex flex-col items-center relative">
+          <div className="bg-white text-black w-11/12 max-w-[1124px] h-[91%] py-6 px-2 md:px-12 rounded-md flex flex-col items-center relative">
             {/* Titulo del proyecto */}
             <h2 className="text-3xl font-semibold pb-4">{props.titulo}</h2>
 
             {/* Contenido del proyecto */}
-            <div className="overflow-y-scroll scrollbar-hide w-10/12 flex gap-x-20">
+            <div className="overflow-y-scroll scrollbar-hide w-11/12 flex flex-col md:flex-row gap-x-20">
               {/* Lado izquierdo para descripcion rapida del proyecto */}
-              <div className="w-5/12 gap-y-2">
+              <div className="w-full md:w-5/12 gap-y-2 pb-4">
                 {/* Imagen del proyecto */}
                 <div className="drop-shadow-md">
                   <img
@@ -188,11 +188,21 @@ export default function Proyecto(props) {
               </div>
 
               {/* Lado derecho para descripcion detallada del proyecto */}
-              <div className="w-7/12">
+              <div className="w-full md:w-7/12">
                 {/* Mi rol */}
-                <div>
+                <div className="pb-3">
                   <h6 className="font-bold">Mi rol:</h6>
                   <p>{props.rol}</p>
+                </div>
+
+                {/* Metodologia */}
+                <div>
+                  <h6 className="font-bold">Metodología:</h6>
+                  <ul className="list-disc list-inside marker:text-blue-600 space-y-2">
+                    {props.metodologia.map((punto) => {
+                      return <li>{punto}</li>;
+                    })}
+                  </ul>
                 </div>
               </div>
             </div>
