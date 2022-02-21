@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Proyecto from "./Proyecto";
 import db from "../Data/firebaseConfig";
 import { collection, onSnapshot } from "firebase/firestore";
+import { NavLink } from "react-router-dom";
 
 export default function HomeProyects() {
   const [proyectos, setProyectos] = useState([]);
@@ -34,28 +35,32 @@ export default function HomeProyects() {
             {/* Seccion de las Cards */}
             <div className="w-full gap-x-7 grid grid-cols-1 lg:grid-cols-3 gap-y-7">
               {proyectos.map((data) => {
-                return (
-                  <Proyecto
-                    key={data.id}
-                    titulo={data.titulo}
-                    descripcion={data.descripcion}
-                    url={data.url}
-                    repositorio={data.repositorio}
-                    foto={data.foto}
-                    tecnologias={data.tecnologias}
-                    programacion={data.programacion}
-                    rol={data.rol}
-                    metodologia={data.metodologia}
-                  />
-                );
+                if (data.home) {
+                  return (
+                    <Proyecto
+                      key={data.id}
+                      titulo={data.titulo}
+                      descripcion={data.descripcion}
+                      url={data.url}
+                      repositorio={data.repositorio}
+                      foto={data.foto}
+                      tecnologias={data.tecnologias}
+                      programacion={data.programacion}
+                      rol={data.rol}
+                      metodologia={data.metodologia}
+                    />
+                  );
+                }
               })}
             </div>
 
             {/* Boton que redirecciona a ver todos los proyectos */}
             <div className="text-center">
-              <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
-                Explorar todos los proyectos {"->"}
-              </button>
+              <NavLink to="/proyectos">
+                <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                  Explorar todos los proyectos {"->"}
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

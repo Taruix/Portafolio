@@ -18,7 +18,7 @@ export default function Proyecto(props) {
     <>
       <div key={props.titulo} className="hover:scale-105 ease-out duration-300">
         {/* Contenedor del Proyecto */}
-        <div className="bg-white rounded-lg text-black h-full overflow-hidden flex flex-col">
+        <div className="bg-white rounded-lg text-black h-full overflow-hidden flex flex-col shadow">
           {/* Imagen del proyecto */}
           <div className="shadow">
             <img
