@@ -1,5 +1,6 @@
 import React from "react";
 import Skills from "./Skills";
+import { NavLink } from "react-router-dom";
 
 export default function HomeSkills() {
   return (
@@ -22,9 +23,11 @@ export default function HomeSkills() {
 
             {/* Boton para mostrar todas las habilidades */}
             <div className="text-center">
-              <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
-                Conocer todas las habilidades
-              </button>
+              <NavLink to="/habilidades">
+                <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                  Conocer todas las habilidades
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

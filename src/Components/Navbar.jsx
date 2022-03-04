@@ -30,7 +30,7 @@ export default function Navbar() {
               {/* Nav Links */}
               <ul className="hidden sm:flex space-x-5">
                 <li>
-                  <NavLink to="/sobremi">Sobre Mi</NavLink>
+                  <NavLink to="/habilidades">Habilidades</NavLink>
                 </li>
                 <li>
                   <NavLink to="/proyectos">Proyectos</NavLink>
