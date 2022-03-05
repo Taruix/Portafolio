@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import ScrollToTop from "./Components/ScrollToTop";
 import ContactPage from "./Pages/ContactPage";
+import CurriculumPage from "./Pages/CurriculumPage";
 import HomaPage from "./Pages/HomaPage";
 import ProyectsPage from "./Pages/ProyectsPage";
 import SkillsPage from "./Pages/SkillsPage";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/proyectos" element={<ProyectsPage />} />
           <Route path="/contacto" element={<ContactPage />} />
           <Route path="/habilidades" element={<SkillsPage />} />
+          <Route path="/curriculum" element={<CurriculumPage />} />
 
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>

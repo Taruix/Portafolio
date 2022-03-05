@@ -39,7 +39,7 @@ export default function Navbar() {
                   <NavLink to="/contacto">Contacto</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/cv">CV</NavLink>
+                  <NavLink to="/curriculum">Curriculum</NavLink>
                 </li>
               </ul>
             </div>
@@ -95,8 +95,8 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="block py-2 px-4 hover:bg-gray-200">
-              <NavLink to="/cv" onClick={toggleMenu}>
-                CV
+              <NavLink to="/curriculum" onClick={toggleMenu}>
+                Curriculum
               </NavLink>
             </li>
           </ul>
