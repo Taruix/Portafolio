@@ -6,7 +6,7 @@ export default function HomaPage() {
   return (
     <>
       {/* Contenedor del Hero */}
-      <div className="flex justify-center  bg-white">
+      <div className="flex justify-center ">
         {/* Contenedor del cotenido del hero */}
         <div className="flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 md:h-screen lg:my-0">
           {/* Mobil!!!!!! Contenedor Imagen de la Hero Image, Derecha y Arriba */}
