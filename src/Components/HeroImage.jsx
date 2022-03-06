@@ -1,5 +1,6 @@
 import React from "react";
 import heroImg from "../Images/programing.svg";
+import { NavLink } from "react-router-dom";
 
 export default function HomaPage() {
   return (
@@ -36,12 +37,19 @@ export default function HomaPage() {
 
               {/* Botones de contacto */}
               <div className="flex space-x-5 font-inter">
-                <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
-                  Ver proyectos
-                </button>
-                <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
-                  Contacto
-                </button>
+                {/* Proyectos */}
+                <NavLink to="/proyectos">
+                  <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                    Ver proyectos
+                  </button>
+                </NavLink>
+
+                {/* Contanto */}
+                <NavLink to="/contacto">
+                  <button className="px-4 py-2.5 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                    Contacto
+                  </button>
+                </NavLink>
               </div>
             </div>
           </div>

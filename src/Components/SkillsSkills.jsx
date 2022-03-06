@@ -44,7 +44,7 @@ export default function SkillsSkills() {
                       <div
                         key={data.Titulo}
                         data-id={data.Titulo}
-                        className="border w-full h-20 shadow flex items-center px-[21px] justify-between "
+                        className="border w-full h-20 shadow flex items-center px-[21px] justify-between cursor-pointer"
                       >
                         <h4
                           className="text-[28px] font-bold"

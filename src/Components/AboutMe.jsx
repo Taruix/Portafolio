@@ -1,5 +1,6 @@
 import React from "react";
 import MeSVG from "../Images/AboutMePerson.svg";
+import { NavLink } from "react-router-dom";
 
 export default function AboutMe() {
   return (
@@ -23,13 +24,25 @@ export default function AboutMe() {
             <h2 className="text-5xl font-extrabold text-center lg:text-left">
               Sobre mí
             </h2>
+
+            {/* Contenido de la descripcion */}
             <p className="text-lg">
               Soy un estudiante de decimo semestre de la carrera de Ingeniería
-              en Mecatrónica de la Facultad de Ingeniería, Mecánica y Eléctrica.
+              de Mecatrónica en la facultad de Ingeniería, Mecánica y Eléctrica.
               Apasionado de los proyectos multidisciplinarios donde se pueda
               aplicar diversas ramas de la tecnología y otras ramas de
-              conocimiento para la creación de soluciones.
+              conocimiento para la creación de soluciones. También soy un
+              apasionado del aprendizaje, aprendiendo de ramas fuera de la
+              ingeniería, como lo es el emprendimiento, finanzas, negocios,
+              marketing, etc.
             </p>
+
+            {/* Boton que manda al curriculum */}
+            <NavLink to="/curriculum">
+              <button className="h-10 px-10 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                Mi Curriculum
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>

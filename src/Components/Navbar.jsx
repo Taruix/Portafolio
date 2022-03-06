@@ -38,20 +38,16 @@ export default function Navbar() {
                 <li>
                   <NavLink to="/contacto">Contacto</NavLink>
                 </li>
-                <li>
-                  <NavLink to="/curriculum">Curriculum</NavLink>
-                </li>
               </ul>
             </div>
 
             {/* Botones */}
             <div className="hidden sm:flex space-x-5">
-              <button className="h-10 w-28 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
-                Contacto
-              </button>
-              <button className="h-10 w-28 rounded-md text-black bg-blue-50 hover:bg-blue-100 cursor-pointer active:bg-blue-300">
-                Idioma
-              </button>
+              <NavLink to="/curriculum">
+                <button className="h-10 w-28 rounded-md text-white bg-blue-600 hover:bg-blue-500 cursor-pointer active:bg-blue-200">
+                  Curriculum
+                </button>
+              </NavLink>
             </div>
 
             {/* Boton para mobil */}
@@ -80,23 +76,23 @@ export default function Navbar() {
         <div className="menu-mobil hidden sm:hidden">
           <ul className="block sm:hidden border bg-gray-50">
             <li className="block py-2 px-4 hover:bg-gray-200">
-              <NavLink to="/" onClick={toggleMenu}>
-                Inicio
-              </NavLink>
-            </li>
-            <li className="block py-2 px-4 hover:bg-gray-200">
-              <NavLink to="/sobremi" onClick={toggleMenu}>
-                Sobre Mi
+              <NavLink to="/habilidades" onClick={toggleMenu}>
+                <button className="w-screen text-left">Habilidades</button>
               </NavLink>
             </li>
             <li className="block py-2 px-4 hover:bg-gray-200">
               <NavLink to="/proyectos" onClick={toggleMenu}>
-                Proyectos
+                <button className="w-screen text-left">Proyectos</button>
+              </NavLink>
+            </li>
+            <li className="block py-2 px-4 hover:bg-gray-200">
+              <NavLink to="/contacto" onClick={toggleMenu}>
+                <button className="w-screen text-left">Contacto</button>
               </NavLink>
             </li>
             <li className="block py-2 px-4 hover:bg-gray-200">
               <NavLink to="/curriculum" onClick={toggleMenu}>
-                Curriculum
+                <button className="w-screen text-left">Curriculum</button>
               </NavLink>
             </li>
           </ul>

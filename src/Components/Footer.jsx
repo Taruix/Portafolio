@@ -20,19 +20,16 @@ export default function Footer() {
                 <NavLink to="/">Inicio</NavLink>
               </li>
               <li>
-                <NavLink to="/proyectos">Proyectos</NavLink>
-              </li>
-              <li>
                 <NavLink to="/habilidades">Habilidades</NavLink>
               </li>
               <li>
-                <NavLink to="/sobremi">Sobre mi</NavLink>
+                <NavLink to="/proyectos">Proyectos</NavLink>
               </li>
               <li>
                 <NavLink to="/contacto">Contacto</NavLink>
               </li>
               <li>
-                <NavLink to="/cv">CV</NavLink>
+                <NavLink to="/curriculum">Curriculum</NavLink>
               </li>
             </ul>
           </div>

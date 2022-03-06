@@ -42,12 +42,12 @@ export default function ContactMe() {
   return (
     <>
       {/* Contenedor del contenido de contacto */}
-      <div className="flex justify-center font-inter py-14">
+      <div className="flex justify-center font-inter py-2">
         {/* Contenido de contacto */}
         <div className="flex flex-col lg:flex w-full md:w-[768px] lg:w-[1024px] px-5 h-[5/6] my-5 lg:h-screen lg:my-0 justify-center items-cente gap-y-10">
           {/* Titulo */}
           <div>
-            <h2 className="text-center text-5xl font-extrabold">Contacto</h2>
+            <h2 className="text-center text-5xl font-extrabold">Contáctame</h2>
           </div>
 
           {/* Contacto interfaz */}
