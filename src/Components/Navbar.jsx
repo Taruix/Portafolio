@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <nav className="shadow h-14 flex justify-center">
+        <nav className="shadow h-14 flex justify-center  bg-white">
           <div
             className="flex justify-between items-center font-semibold
     w-full md:w-[768px] lg:w-[1024px]
@@ -73,7 +73,7 @@ export default function Navbar() {
         </nav>
 
         {/* Menu mobil */}
-        <div className="menu-mobil hidden sm:hidden">
+        <div className="menu-mobil hidden sm:hidden  bg-white">
           <ul className="block sm:hidden border bg-gray-50">
             <li className="block py-2 px-4 hover:bg-gray-200">
               <NavLink to="/habilidades" onClick={toggleMenu}>

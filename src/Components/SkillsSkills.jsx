@@ -25,7 +25,7 @@ export default function SkillsSkills() {
 
   return (
     <>
-      <div className="flex justify-center font-inter py-14">
+      <div className="flex justify-center font-inter py-14  bg-white">
         {/* Contenedor del contenido de la seccion de proyectos */}
         <div className="flex-container lg:flex w-full md:w-[768px] lg:w-[1024px] mx-5 h-[5/6] my-5 lg:h-fit lg:my-0 justify-center">
           {/* Contenido de proyetos */}
