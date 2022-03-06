@@ -51,6 +51,7 @@ export default function HomeProyects() {
                     />
                   );
                 }
+                return null;
               })}
             </div>
 
