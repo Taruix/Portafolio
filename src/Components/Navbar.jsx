@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <nav className="h-14 flex justify-center  bg-white shadow">
+        <nav className="h-14 flex justify-center  shadow">
           <div
             className="flex justify-between items-center font-semibold
     w-full md:w-[768px] lg:w-[1024px]
