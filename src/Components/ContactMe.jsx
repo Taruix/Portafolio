@@ -139,7 +139,7 @@ export default function ContactMe() {
                 </div>
 
                 {/* Area para el mensaje */}
-                <div className="w-full flex flex-col">
+                <div className="w-full flex flex-col gap-y-2">
                   <label className="font-semibold">Mensaje</label>
                   <textarea
                     name="message"
